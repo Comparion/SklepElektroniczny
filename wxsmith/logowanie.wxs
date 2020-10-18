@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<wxsmith>
+	<object class="wxDialog" name="logowanie">
+		<size>400,311</size>
+		<pos_arg>1</pos_arg>
+		<size_arg>1</size_arg>
+		<object class="wxButton" name="ID_BUTTON1" variable="wxID_CANCEL" member="yes">
+			<label>cencal</label>
+			<pos>272,232</pos>
+			<handler function="OnButton1Click" entry="EVT_BUTTON" />
+		</object>
+		<object class="wxButton" name="ID_BUTTON2" variable="wxID_OK" member="yes">
+			<label>ok</label>
+			<pos>48,240</pos>
+			<handler function="OnButton2Click" entry="EVT_BUTTON" />
+		</object>
+		<object class="wxTextCtrl" name="ID_TEXTCTRL1" variable="log" member="yes">
+			<pos>32,80</pos>
+			<size>208,32</size>
+		</object>
+		<object class="wxTextCtrl" name="ID_TEXTCTRL2" variable="pas" member="yes">
+			<pos>32,144</pos>
+			<size>208,32</size>
+			<style>wxTE_PASSWORD</style>
+		</object>
+		<object class="wxStaticText" name="ID_STATICTEXT1" variable="StaticText1" member="yes">
+			<label>login</label>
+			<pos>288,88</pos>
+		</object>
+		<object class="wxStaticText" name="ID_STATICTEXT2" variable="StaticText2" member="yes">
+			<label>password</label>
+			<pos>288,152</pos>
+			<size>56,16</size>
+		</object>
+	</object>
+</wxsmith>

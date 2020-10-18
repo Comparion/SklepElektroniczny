@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="sklep_elektroniczny" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/sklep_elektroniczny" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Option projectLinkerOptionsRelation="2" />
+				<Compiler>
+					<Add option="-g" />
+					<Add directory="E:/wxWidgets-3.0.4/lib/gcc_dll/mswu" />
+					<Add directory="E:/WxCode/wxsqlite3-3.1.1/include" />
+					<Add directory="E:/WxCode/wxsqlite3-3.1.1/sqlite3/include" />
+				</Compiler>
+				<ResourceCompiler>
+					<Add directory="E:/wxWidgets-3.0.4/lib/gcc_dll/mswu" />
+				</ResourceCompiler>
+				<Linker>
+					<Add library="libwxmsw30u.a" />
+					<Add library="E:/WxCode/wxsqlite3-3.1.1/sqlite3/lib/sqlite3.a" />
+					<Add directory="E:/wxWidgets-3.0.4/lib/gcc_dll" />
+				</Linker>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/sklep_elektroniczny" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Option projectLinkerOptionsRelation="2" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add directory="E:/wxWidgets-3.0.4/lib/gcc_dll/mswu" />
+				</Compiler>
+				<ResourceCompiler>
+					<Add directory="E:/wxWidgets-3.0.4/lib/gcc_dll/mswu" />
+				</ResourceCompiler>
+				<Linker>
+					<Add option="-s" />
+					<Add library="libwxmsw30u.a" />
+					<Add directory="E:/wxWidgets-3.0.4/lib/gcc_dll" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-pipe" />
+			<Add option="-mthreads" />
+			<Add option="-D__GNUWIN32__" />
+			<Add option="-D__WXMSW__" />
+			<Add option="-DWXUSINGDLL" />
+			<Add option="-DwxUSE_UNICODE" />
+			<Add option="-Wall" />
+			<Add directory="E:/wxWidgets-3.0.4/include" />
+		</Compiler>
+		<ResourceCompiler>
+			<Add directory="E:/wxWidgets-3.0.4/include" />
+		</ResourceCompiler>
+		<Linker>
+			<Add option="-mthreads" />
+		</Linker>
+		<Unit filename="../../WxCode/wxsqlite3-3.1.1/src/wxsqlite3.cpp" />
+		<Unit filename="kli.cpp" />
+		<Unit filename="kli.h" />
+		<Unit filename="logowanie.cpp" />
+		<Unit filename="logowanie.h" />
+		<Unit filename="logowanie2.cpp" />
+		<Unit filename="logowanie2.h" />
+		<Unit filename="pra.cpp" />
+		<Unit filename="pra.h" />
+		<Unit filename="pro.cpp" />
+		<Unit filename="pro.h" />
+		<Unit filename="resource.rc">
+			<Option compilerVar="WINDRES" />
+		</Unit>
+		<Unit filename="sklep_elektronicznyApp.cpp" />
+		<Unit filename="sklep_elektronicznyApp.h" />
+		<Unit filename="sklep_elektronicznyMain.cpp" />
+		<Unit filename="sklep_elektronicznyMain.h" />
+		<Unit filename="wxsmith/kli.wxs" />
+		<Unit filename="wxsmith/logowanie.wxs" />
+		<Unit filename="wxsmith/logowanie2.wxs" />
+		<Unit filename="wxsmith/pra.wxs" />
+		<Unit filename="wxsmith/pro.wxs" />
+		<Unit filename="wxsmith/sklep_elektronicznyframe.wxs" />
+		<Unit filename="wxsmith/zam.wxs" />
+		<Unit filename="zam.cpp" />
+		<Unit filename="zam.h" />
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+			<wxsmith version="1">
+				<gui name="wxWidgets" src="sklep_elektronicznyApp.cpp" main="sklep_elektronicznyFrame" init_handlers="necessary" language="CPP" />
+				<resources>
+					<wxFrame wxs="wxsmith/sklep_elektronicznyframe.wxs" src="sklep_elektronicznyMain.cpp" hdr="sklep_elektronicznyMain.h" fwddecl="0" i18n="1" name="sklep_elektronicznyFrame" language="CPP" />
+					<wxFrame wxs="wxsmith/pro.wxs" src="pro.cpp" hdr="pro.h" fwddecl="0" i18n="1" name="pro" language="CPP" />
+					<wxFrame wxs="wxsmith/pra.wxs" src="pra.cpp" hdr="pra.h" fwddecl="0" i18n="1" name="pra" language="CPP" />
+					<wxDialog wxs="wxsmith/logowanie.wxs" src="logowanie.cpp" hdr="logowanie.h" fwddecl="0" i18n="1" name="logowanie" language="CPP" />
+					<wxFrame wxs="wxsmith/kli.wxs" src="kli.cpp" hdr="kli.h" fwddecl="0" i18n="1" name="kli" language="CPP" />
+					<wxFrame wxs="wxsmith/zam.wxs" src="zam.cpp" hdr="zam.h" fwddecl="0" i18n="1" name="zam" language="CPP" />
+					<wxDialog wxs="wxsmith/logowanie2.wxs" src="logowanie2.cpp" hdr="logowanie2.h" fwddecl="0" i18n="1" name="logowanie2" language="CPP" />
+				</resources>
+			</wxsmith>
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<wxsmith>
+	<object class="wxDialog" name="logowanie2">
+		<size>400,354</size>
+		<id_arg>0</id_arg>
+		<object class="wxTextCtrl" name="ID_TEXTCTRL1" variable="log2" member="yes">
+			<pos>80,128</pos>
+			<size>152,32</size>
+		</object>
+		<object class="wxTextCtrl" name="ID_TEXTCTRL2" variable="pas2" member="yes">
+			<pos>80,192</pos>
+			<size>152,32</size>
+			<style>wxTE_PASSWORD</style>
+		</object>
+		<object class="wxStaticText" name="ID_STATICTEXT1" variable="StaticText1" member="yes">
+			<label>login</label>
+			<pos>272,136</pos>
+		</object>
+		<object class="wxStaticText" name="ID_STATICTEXT2" variable="StaticText2" member="yes">
+			<label>password</label>
+			<pos>272,200</pos>
+		</object>
+		<object class="wxButton" name="ID_BUTTON1" variable="Button1" member="yes">
+			<label>ok</label>
+			<pos>56,288</pos>
+			<handler function="OnButton1Click" entry="EVT_BUTTON" />
+		</object>
+		<object class="wxButton" name="ID_BUTTON2" variable="Button2" member="yes">
+			<label>cancel</label>
+			<pos>264,288</pos>
+			<handler function="OnButton2Click" entry="EVT_BUTTON" />
+		</object>
+		<object class="wxStaticText" name="ID_STATICTEXT3" variable="StaticText3" member="yes">
+			<label>Aby miec dostep do tego okienka</label>
+			<pos>40,24</pos>
+		</object>
+		<object class="wxStaticText" name="ID_STATICTEXT4" variable="StaticText4" member="yes">
+			<label>musisz zalogowac sie na administratora</label>
+			<pos>40,48</pos>
+		</object>
+	</object>
+</wxsmith>
